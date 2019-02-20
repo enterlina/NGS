@@ -1,8 +1,6 @@
 from Bio import SeqIO
 import matplotlib.pyplot as plt
 
-
-
 def QualityRead(cntAT, cntGC, cntN, bucket_cnt):
     if (cntAT + cntGC > bucket_cnt):
         return True
@@ -36,9 +34,8 @@ def GCDistribution(file_name, bucket_cnt):
     return ans
 
 
-# import matplotlib.pyplot as plt
-# # % matplotlib
-# # inline
+
+
 
 
 def resGCDistribution(file_name, bcnt):
@@ -58,4 +55,4 @@ def resGCDistribution(file_name, bcnt):
 
 resGCDistribution("/Users/alena_paliakova/Google Drive/!Bioinf_drive/01_NGS/HW1/test.fastq", 20)
 
-# resGCDistribution("/Users/alena_paliakova/Google Drive/!Bioinf_drive/01_NGS/HW1/ecoli_mda_lane1_right.fastq", 20)
+resGCDistribution("/Users/alena_paliakova/Google Drive/!Bioinf_drive/01_NGS/HW1/ecoli_mda_lane1_right.fastq", 20)

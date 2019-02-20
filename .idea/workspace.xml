@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9be6f6c7-08ae-44c9-bd33-ec9cc8ab8fa1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/NGS_HW1.py" beforeDir="false" afterPath="$PROJECT_DIR$/NGS_HW1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/NGS_git.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NGS_git.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NGS_HW1.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,45 +18,45 @@
     <session id="-913746160">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ipynb" value="1" />
-          <entry key="py" value="4" />
+          <entry key="py" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="1" />
-          <entry key="Python" value="4" />
+          <entry key="Python" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="184" />
+          <entry key="py" value="188" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="184" />
+          <entry key="Python" value="188" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NGS_HW1.py">
+        <entry file="file://$PROJECT_DIR$/../HW1/NGS_HW1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state>
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -80,6 +84,7 @@
         <option value="$PROJECT_DIR$/HW1.py" />
         <option value="$PROJECT_DIR$/../../02_MachinLearn/ML_git/HW1_1.py" />
         <option value="$PROJECT_DIR$/NGS_HW1.py" />
+        <option value="$PROJECT_DIR$/HW1/NGS_HW1.py" />
       </list>
     </option>
   </component>
@@ -101,6 +106,17 @@
             <path>
               <item name="NGS_git" type="b2602c69:ProjectViewProjectNode" />
               <item name="NGS_git" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NGS_git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NGS_git" type="462c0819:PsiDirectoryNode" />
+              <item name="HW1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NGS_git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NGS_git" type="462c0819:PsiDirectoryNode" />
+              <item name="HW1" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -124,7 +140,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.HW1_1">
+  <component name="RunManager" selected="Jupyter Notebook.NGS_git">
     <configuration name="NGS_git" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="NGS_git" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,14 +148,14 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="additionalOptions" value="" />
-      <option name="ipnbHost" value="" />
-      <option name="ipnbPort" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
       <method v="2" />
     </configuration>
     <configuration name="HW1" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -184,15 +200,38 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="NGS_HW1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="NGS_git" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../HW1" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../HW1/NGS_HW1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.NGS_git" />
       <item itemvalue="Python.HW1" />
       <item itemvalue="Python.HW1_1" />
+      <item itemvalue="Python.NGS_HW1" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.HW1_1" />
+        <item itemvalue="Python.NGS_HW1" />
         <item itemvalue="Python.HW1" />
+        <item itemvalue="Python.HW1_1" />
       </list>
     </recent_temporary>
   </component>
@@ -209,9 +248,17 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="106" y="131" width="1432" height="847" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24946846" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -222,11 +269,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32980132" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32980132" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32980132" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -242,25 +289,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../NGS/HW1.py">
+    <entry file="file://$PROJECT_DIR$/../NGS/HW1.py" />
+    <entry file="file://$PROJECT_DIR$/NGS_HW1.py" />
+    <entry file="file:///usr/local/lib/python3.7/site-packages/IPython/terminal/embed.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="160">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HW1/NGS_HW1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="50" selection-end-line="61" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NGS_HW1.py">
+    <entry file="file:///usr/local/lib/python3.7/site-packages/IPython/core/interactiveshell.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../HW1/NGS_HW1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
