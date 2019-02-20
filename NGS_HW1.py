@@ -1,6 +1,6 @@
 from Bio import SeqIO
 import matplotlib.pyplot as plt
-# % matplotlib inline
+
 
 
 def QualityRead(cntAT, cntGC, cntN, bucket_cnt):
