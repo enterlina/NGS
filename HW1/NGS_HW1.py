@@ -34,10 +34,6 @@ def GCDistribution(file_name, bucket_cnt):
     return ans
 
 
-
-
-
-
 def resGCDistribution(file_name, bcnt):
     delta = 100 // bcnt
     xs = [(i + (i + delta)) / 2 for i in range(0, 100, delta)]
