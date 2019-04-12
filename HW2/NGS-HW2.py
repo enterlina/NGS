@@ -1,7 +1,7 @@
 import pysam
 import matplotlib.pyplot as plt
 # import Bio
-# from Bio import SeqIO
+from Bio import SeqIO
 import numpy as np
 import math
 
