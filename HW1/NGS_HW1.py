@@ -1,54 +1,128 @@
-from Bio import SeqIO
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[7]:
+
+
+from Bio import Seq
 import matplotlib.pyplot as plt
+import time
+import seaborn as sns
 
-def QualityRead(cntAT, cntGC, cntN, bucket_cnt):
-    if (cntAT + cntGC > bucket_cnt):
-        return True
-    return False
+le = 100
+
+u1 = []
+u2 = []
+u3 = []
+
+for record in SeqIO.parse("/Users/alena_paliakova/Google Drive/!Bioinf_drive/01_NGS/HW1/100x.1.fastq", "fastq"):
+
+    c = record.seq
+    d = record.letter_annotations["phred_quality"]
+
+    u1.append((c.count('C') + c.count('G')) / 100)
+
+    a2 = 0
+    c2 = 0.001
+    for n in range(0, le):
+        if d[n] >= 20:
+            c2 += 1
+            if c[n] in {'G', 'C'}:
+                a2 += 1
+    u2.append(a2 / c2)
+
+    if sum(i > 20 for i in d) > 80:
+        u3.append((c.count('C') + c.count('G')) / 100)
+
+plt.figure()
+plt.title('frequency distribution % without any restrictions')
+sns.distplot(u1)
+
+plt.figure()
+plt.title('frequency distribution % with quality>20 ')
+sns.distplot(u2)
+plt.figure()
+sns.distplot(u3)
 
 
-def GCDistribution(file_name, bucket_cnt):
-    ans = [0] * (bucket_cnt)
+# In[8]:
+
+
+from Bio import Seq
+import matplotlib.pyplot as plt
+import time
+import seaborn as sns
+
+le = 100
+
+u1 = []
+u2 = []
+u3 = []
+
+for record in SeqIO.parse("/Users/alena_paliakova/Google Drive/!Bioinf_drive/01_NGS/HW1/100x.2.fastq", "fastq"):
+
+    c = record.seq
+    d = record.letter_annotations["phred_quality"]
+
+    u1.append((c.count('C') + c.count('G')) / 100)
+
+    a2 = 0
+    c2 = 0.001
+    for n in range(0, le):
+        if d[n] >= 20:
+            c2 += 1
+            if c[n] in {'G', 'C'}:
+                a2 += 1
+    u2.append(a2 / c2)
+
+    if sum(i > 20 for i in d) > 80:
+        u3.append((c.count('C') + c.count('G')) / 100)
+
+plt.figure()
+plt.title('frequency distribution % without any restrictions')
+sns.distplot(u1)
+
+plt.figure()
+plt.title('frequency distribution % with quality>20 ')
+sns.distplot(u2)
+plt.figure()
+sns.distplot(u3)
+
+
+# In[9]:
+
+
+import numpy as np
+
+def getQualityByPosition(file_name):
+    posqv = []
     cnt = 0
     for rec in SeqIO.parse(file_name, "fastq"):
+        if cnt % 100000 == 0:
+            print(cnt)
         cnt += 1
-        cntAT = 0
-        cntGC = 0
-        cntN = 0
         reclen = len(rec.seq)
         for i in range(reclen):
-            quality_trash_hold = 30
-            if (rec.letter_annotations["phred_quality"][i] > quality_trash_hold):
-                if (rec.seq[i] == 'A' or rec.seq[i] == 'T'):
-                    cntAT += 1
-                elif (rec.seq[i] == 'G' or rec.seq[i] == 'C'):
-                    cntGC += 1
-                elif (rec.seq[i] == 'N'):
-                    cntN += 1
-            else:
-                cntN += 1
+            if i >= len(posqv):
+                posqv.append([])
+            posqv[i].append(rec.letter_annotations["phred_quality"][i])
+    return posqv
 
-        if QualityRead(cntAT, cntGC, cntN, bucket_cnt):
-            if cntAT != 0:
-                ans[cntGC * bucket_cnt // (cntGC + cntAT)] += 1
-    return ans
-
-
-def resGCDistribution(file_name, bcnt):
-    delta = 100 // bcnt
-    xs = [(i + (i + delta)) / 2 for i in range(0, 100, delta)]
-    ys = GCDistribution(file_name, bcnt)
-
-    print(xs)
-    print(ys)
-
-    plt.plot(xs, ys, 'r+')
-    plt.axis([0, 100, 0, max(ys)+2])
-    plt.xlabel('%GC')
-    plt.ylabel('Number of reads')
+def showQualityByPosition(file_name):
+    dataset = getQualityByPosition(file_name)
+    fig = plt.figure(1, figsize=(30,30))
+    ax = fig.add_subplot(111)
+    ax.boxplot(dataset)
+    plt.xlabel('position')
+    plt.ylabel('quality')
     plt.title(file_name)
     plt.show()
+    
+showQualityByPosition("/Users/alena_paliakova/Google Drive/!Bioinf_drive/01_NGS/HW1/100x.1.fastq")
 
-resGCDistribution("/Users/alena_paliakova/Google Drive/!Bioinf_drive/01_NGS/HW1/test.fastq", 20)
 
-resGCDistribution("/Users/alena_paliakova/Google Drive/!Bioinf_drive/01_NGS/HW1/ecoli_mda_lane1_right.fastq", 20)
+# In[ ]:
+
+
+
+
